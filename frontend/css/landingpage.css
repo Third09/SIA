@@ -1,0 +1,322 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #fff;
+  padding: 15px 50px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Main Navigation Bar in Header */
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d57a7a;
+}
+
+/* Navigation in Header */
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ff4081;
+}
+
+/* Icons Section */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  width: 180px;
+}
+
+.icons input:focus {
+  outline: none;
+  border-color: #ff4081;
+}
+
+.icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Secondary Navigation Bar */
+nav.navbar {
+  background-color: #f8f8f8;
+  border-top: 1px solid #eaeaea;
+  padding: 12px 0;
+}
+
+nav.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 0;
+  transition: color 0.3s;
+}
+
+nav.navbar ul li a:hover {
+  color: #ff4081;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #fdf2f2 0%, #fce4e4 100%);
+  text-align: center;
+  padding: 80px 20px;
+  margin-bottom: 50px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  font-size: 16px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #666;
+}
+
+.btn {
+  background: #ff6f91;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e55a7e;
+}
+
+/* Categories */
+.categories {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f6caca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Products */
+.products {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.products h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.product .box {
+  width: 150px;
+  height: 200px;
+  background: #f6caca;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product p {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Sale Section */
+.sale {
+  background: #fbeaea;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sale h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sale p {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Discover */
+.discover {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.discover h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.discover-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.discover-card {
+  width: 200px;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.discover-card .box {
+  width: 100%;
+  height: 150px;
+  background: #f6caca;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.discover-card p {
+  margin: 10px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Join */
+.join {
+  background: #fbeaea;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.join h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+footer p {
+  color: #666;
+  font-size: 14px;
+}

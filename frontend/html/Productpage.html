@@ -1,1 +1,93 @@
-wait langs
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheEssential - Product Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  
+  <header>
+    <div class="top-nav">
+      <div class="search-box">
+        <input type="text" placeholder="Search products...">
+        <i class="fa fa-search search-icon"></i>
+      </div>
+
+      <div class="center-nav">
+        <a href="#" class="nav-link active">Home</a>
+        <img src="logo.png" alt="SheEssential" class="logo">
+        <a href="#" class="nav-link">Shop</a>
+      </div>
+
+      <div class="right-icons">
+        <i class="fa fa-bell"></i>
+        <i class="fa fa-shopping-cart"></i>
+        <i class="fa fa-user"></i>
+      </div>
+    </div>
+
+    <div class="category-bar">
+      <a href="#">Best Sellers</a>
+      <a href="#">New Arrivals</a>
+      <a href="#">On Sale</a>
+      <a href="#">Skincare Products</a>
+      <a href="#">Beauty Products</a>
+    </div>
+  </header>
+
+  
+  <main class="product-section">
+    <p class="breadcrumb">HOME &gt; MAKEUP &gt; FACE &gt; PRODUCT NAME</p>
+
+    <div class="product-content">
+      
+      <div class="image-area">
+        <div class="small-images">
+          <div class="thumb"></div>
+          <div class="thumb"></div>
+        </div>
+        <div class="main-image"></div>
+      </div>
+
+      
+      <div class="details-area">
+        <h1>Product Name Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+
+        <div class="rating-row">
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
+          <p class="reviews">2 reviews</p>
+          <i class="fa fa-share-alt share"></i>
+        </div>
+
+        <h2 class="price">380 PHP</h2>
+
+        <div class="selectors">
+          <select>
+            <option>Variation</option>
+            <option>Shade 1</option>
+            <option>Shade 2</option>
+          </select>
+
+          <div class="quantity">
+            <button id="minus">-</button>
+            <input type="text" id="quantity" value="1" readonly>
+            <button id="plus">+</button>
+          </div>
+        </div>
+
+        <button class="add-btn">Add to cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 SheEssential | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

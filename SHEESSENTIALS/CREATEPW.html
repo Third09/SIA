@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create New Password</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+    }
+    .header-bar {
+      background-color: #fd7e86;
+      height: 24px;
+      width: 100vw;
+      border-bottom: 8px solid #fff1f3;
+      box-sizing: border-box;
+      flex-shrink: 0;
+    }
+    .fullscreen-container {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 0;
+      min-width: 0;
+      background: transparent;
+    }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      margin: 0;
+      background: #fff;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+      border-radius: 32px;
+      padding: 40px 48px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h2 {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 28px;
+      font-size: 1.8em;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    label {
+      font-weight: 700;
+      font-size: 0.925em;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    input[type="password"] {
+      border: 1.5px solid #fd7e86;
+      border-radius: 12px;
+      height: 40px;
+      font-size: 1em;
+      padding: 0 14px;
+      box-sizing: border-box;
+      outline: none;
+      transition: border-color 0.25s;
+    }
+    input[type="password"]:focus {
+      border-color: #fa6974;
+    }
+    .password-requirements {
+      font-size: 0.9em;
+      color: #333;
+      padding-left: 6px;
+      margin-top: 6px;
+      font-weight: 600;
+      line-height: 1.3em;
+    }
+    .password-requirements > div {
+      margin-left: 12px;
+      margin-top: 3px;
+      font-weight: normal;
+    }
+    button {
+      background-color: #fd7e86;
+      color: white;
+      font-weight: 700;
+      border: none;
+      border-radius: 20px;
+      padding: 14px 0;
+      margin-top: 34px;
+      cursor: pointer;
+      font-size: 1.15em;
+      transition: background-color 0.2s;
+    }
+    button:hover,
+    button:focus {
+      background-color: #e3676e;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-bar"></div>
+  <div class="fullscreen-container">
+    <div class="card">
+      <h2>Create New Password</h2>
+      <form>
+        <label for="newPassword">New Password</label>
+        <input type="password" id="newPassword" name="newPassword" />
+        <label for="reenterPassword">Re-enter Password</label>
+        <input type="password" id="reenterPassword" name="reenterPassword" />
+        <div class="password-requirements">
+          <div>Must contain:</div>
+          <div>8 characters or more</div>
+          <div>uppercase</div>
+          <div>lowercase</div>
+          <div>number</div>
+          <div>special character.</div>
+        </div>
+        <button type="submit">Confirm</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

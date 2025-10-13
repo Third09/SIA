@@ -3,20 +3,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/c2ac8bb0c1.js" crossorigin="anonymous"></script>
 <title>Sheessentials Shop</title>
-<link rel="stylesheet" href="ShopMain.css">
+<link rel="stylesheet" href="/frontend/css/ShopMain.css">
 </head>
 
 <body>
 <!--header-->
 <div class="header">
     <form class="search-bar" action="/search" method="GET">
-        <label for="searchitem" class="visually-hidden">Search Products</label>
         <input type="text" id="searchitem" name="searchitem" placeholder="Search for products..." title="Search Products">
     </form>
 
     <div class="center-section">
         <a href="#" class="Home">Home</a>
-        <img class="logo" src="Logo.png" alt="Sheessentials Logo">
+        <img class="logo" src="/frontend/images/Logo.png">
         <a href="#" class="Shop">Shop</a>
     </div>
 
@@ -38,42 +37,46 @@
 </div>
 <!--PinkDivider-->
 
+    <div class="testshop">
+        <h3>Shop</h3>
+    </div>
 <!--Main Content-->
 <div class="shop-container">
 
+
     <!--Sidebar-->
     <div class="sidebar">
-        <h2>All Categories</h2>
+        <h2><i class="fas fa-list-ul " style="font-size: 20px;"></i>  All Categories</h2>
         <div class="category-section">
             <h3>Face</h3>
             <ul>
-                <li>Foundation</li>
-                <li>Concealer</li>
-                <li>Blush</li>
-                <li>Highlighter</li>
+                <li>• Foundation</li>
+                <li>• Concealer</li>
+                <li>• Blush</li>
+                <li>• Highlighter</li>
             </ul>
 
             <h3>Eyes</h3>
             <ul>
-                <li>Eyeshadow</li>
-                <li>Mascara</li>
-                <li>Eyeliner</li>
+                <li>• Eyeshadow</li>
+                <li>• Mascara</li>
+                <li>• Eyeliner</li>
             </ul>
 
             <h3>Lips</h3>
             <ul>
-                <li>Lipstick</li>
-                <li>Lip Gloss</li>
-                <li>Lip Tint</li>
+                <li>• Lipstick</li>
+                <li>• Lip Gloss</li>
+                <li>• Lip Tint</li>
             </ul>
 
             <h3>Skincare</h3>
             <ul>
-                <li>Cleansers</li>
-                <li>Toners</li>
-                <li>Moisturizers</li>
-                <li>Serums</li>
-                <li>Mask</li>
+                <li>• Cleansers</li>
+                <li>• Toners</li>
+                <li>• Moisturizers</li>
+                <li>• Serums</li>
+                <li>• Mask</li>
             </ul>
         </div>
 
@@ -87,8 +90,9 @@
             <input type="number" id="maxprice" name="maxprice" placeholder="₱1000" title="Maximum Price">
 
             <button class="apply-btn">Apply</button>
-            <button class="clear-btn">Clear All</button>
+
         </div>
+        <button class="clear-btn">Clear All Filters</button>
     </div>
     <!--Sidebar-->
 
@@ -106,91 +110,101 @@
         <!--Products Grid-->
         <div class="products-grid">
             <!-- 16 sample products -->
-            <div class="product-card">
+            <a href="#" class="product-card">
                 <div class="product-image"></div>
                 <p class="product-name">Velvet Touch Cleanser</p>
                 <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <p class="product-name">Velvet Touch Cleanser</p>
-                <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <p class="product-name">Velvet Touch Cleanser</p>
-                <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <p class="product-name">Velvet Touch Cleanser</p>
-                <p class="product-price">₱249</p>
-            </div>
+            </a>
 
-            <div class="product-card">
+            <a href="#" class="product-card">
                 <div class="product-image"></div>
                 <p class="product-name">Velvet Touch Cleanser</p>
                 <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <p class="product-name">Velvet Touch Cleanser</p>
-                <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <p class="product-name">Velvet Touch Cleanser</p>
-                <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <p class="product-name">Velvet Touch Cleanser</p>
-                <p class="product-price">₱249</p>
-            </div>
+            </a>
 
-            <div class="product-card">
+            <a href="#" class="product-card">
                 <div class="product-image"></div>
                 <p class="product-name">Velvet Touch Cleanser</p>
                 <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <p class="product-name">Velvet Touch Cleanser</p>
-                <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <p class="product-name">Velvet Touch Cleanser</p>
-                <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image"></div>
-                <p class="product-name">Velvet Touch Cleanser</p>
-                <p class="product-price">₱249</p>
-            </div>
+            </a>
 
-            <div class="product-card">
+            <a href="#" class="product-card">
                 <div class="product-image"></div>
                 <p class="product-name">Velvet Touch Cleanser</p>
                 <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
+            </a>
+
+            <a href="#" class="product-card">
                 <div class="product-image"></div>
                 <p class="product-name">Velvet Touch Cleanser</p>
                 <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
+            </a>
+
+            <a href="#" class="product-card">
                 <div class="product-image"></div>
                 <p class="product-name">Velvet Touch Cleanser</p>
                 <p class="product-price">₱249</p>
-            </div>
-            <div class="product-card">
+            </a>
+
+            <a href="#" class="product-card">
                 <div class="product-image"></div>
                 <p class="product-name">Velvet Touch Cleanser</p>
                 <p class="product-price">₱249</p>
-            </div>
+            </a>
+
+            <a href="#" class="product-card">
+                <div class="product-image"></div>
+                <p class="product-name">Velvet Touch Cleanser</p>
+                <p class="product-price">₱249</p>
+            </a>
+
+            <a href="#" class="product-card">
+                <div class="product-image"></div>
+                <p class="product-name">Velvet Touch Cleanser</p>
+                <p class="product-price">₱249</p>
+            </a>
+
+            <a href="#" class="product-card">
+                <div class="product-image"></div>
+                <p class="product-name">Velvet Touch Cleanser</p>
+                <p class="product-price">₱249</p>
+            </a>
+
+            <a href="#" class="product-card">
+                <div class="product-image"></div>
+                <p class="product-name">Velvet Touch Cleanser</p>
+                <p class="product-price">₱249</p>
+            </a>
+
+            <a href="#" class="product-card">
+                <div class="product-image"></div>
+                <p class="product-name">Velvet Touch Cleanser</p>
+                <p class="product-price">₱249</p>
+            </a>
+
+            <a href="#" class="product-card">
+                <div class="product-image"></div>
+                <p class="product-name">Velvet Touch Cleanser</p>
+                <p class="product-price">₱249</p>
+            </a>
+
+            <a href="#" class="product-card">
+                <div class="product-image"></div>
+                <p class="product-name">Velvet Touch Cleanser</p>
+                <p class="product-price">₱249</p>
+            </a>
+
+            <a href="#" class="product-card">
+                <div class="product-image"></div>
+                <p class="product-name">Velvet Touch Cleanser</p>
+                <p class="product-price">₱249</p>
+            </a>
+
+            <a href="#" class="product-card">
+                <div class="product-image"></div>
+                <p class="product-name">Velvet Touch Cleanser</p>
+                <p class="product-price">₱249</p>
+            </a>
         </div>
-    </div>
-</div>
 </body>
 </html>

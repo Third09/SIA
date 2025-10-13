@@ -2,47 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/c2ac8bb0c1.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skincare Landing Page</title>
-  <link rel="stylesheet" href="landingpage.css">
+  <link rel="stylesheet" href="/frontend/css/landingpage.css">
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <div class="navbar">
-      <div class="logo">Skinessentials</div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-      </nav>
-      <div class="icons">
-        <input type="text" placeholder="Search...">
-        <a href="#"><img src="cart.png" alt="cart"></a>
-      </div>
+<div class="header">
+    <form class="search-bar" action="/search" method="GET">
+        <input type="text" id="searchitem" name="searchitem" placeholder="Search for products..." title="Search Products">
+    </form>
+
+    <div class="center-section">
+        <a href="#" class="Home">Home</a>
+      <img class="logo" src="/frontend/images/Logo.png">
+        <a href="#" class="Shop">Shop</a>
     </div>
-  </header>
+
+    <div class="SmallB">
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-user-alt"></i></a>
+    </div>
+</div>
 
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Best Sellers</a></li>
-      <li><a href="#">New Arrivals</a></li>
-      <li><a href="#">On Sale</a></li>
-      <li><a href="#">Skincare Products</a></li>
-      <li><a href="#">Beauty Products</a></li>
-    </ul>
-  </nav>
+<!--PinkDivider-->
+<div class="pink-divider">
+    <a href="">Best Sellers</a>
+    <a href="">New Arrivals</a>
+    <a href="">On Sale</a>
+    <a href="">Skincare Products</a>
+    <a href="">BeautyCare Products</a>
+</div>
+<!--PinkDivider-->
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>Glow Naturally.<br />Feel Beautiful.<br />Every Day.</h1>
-      <p>
-        Discover skincare that blends science and self-care. At Skinessentials,
-        we handpick essentials that bring out your natural glow—because
-        beauty should be effortless.
-      </p>
+    <img src="/frontend/images/#" alt="">
       <button class="btn">Shop Now</button>
     </div>
   </section>

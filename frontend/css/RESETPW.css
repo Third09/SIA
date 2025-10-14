@@ -1,0 +1,159 @@
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; /* Changed from height: 100vh to min-height for better flexibility */
+      padding: 20px; /* Added padding to prevent content from touching edges on small screens */
+    }
+
+    .modal {
+      background: #fff;
+      border-radius: 30px;
+      display: flex;
+      width: 90%; /* Changed from 30% to 90% base width for better small-screen fit */
+      max-width: 400px; /* Added max-width to cap it on large screens */
+      height: 80%; /* Adjusted from 70% for better proportion */
+      max-height: 600px; /* Added max-height to prevent it from being too tall */
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+
+    .modal-main {
+      flex: 1;
+      padding: 40px 20px; /* Reduced side padding for smaller screens */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .modal-main h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 15px 15px; /* Simplified padding; removed the 48px right padding as it seemed inconsistent */
+      border: 2px solid #f58c8c;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      text-align: left;
+      font-size: 14px;
+      box-sizing: border-box; /* Ensures padding doesn't add extra width */
+    }
+
+    .btn {
+      background-color: #f58c8c;
+      color: white;
+      border: none;
+      padding: 15px 30px; /* Adjusted padding for better scaling */
+      border-radius: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto 0; /* Added top margin for spacing */
+      width: 100%; /* Made full-width for consistency on small screens */
+      max-width: 200px; /* Caps width on larger screens */
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (min-width: 768px) { /* Tablets and up */
+      body {
+        padding: 40px; /* More padding on larger screens */
+      }
+
+      .modal {
+        width: 30%; /* Your original width for medium+ screens */
+        max-width: 500px; /* Slightly wider cap */
+        height: 70%; /* Original height */
+        padding: 0;
+      }
+
+      .modal-main {
+        padding: 40px; /* Full padding restored */
+      }
+
+      .modal-main h2 {
+        font-size: 32px; /* Slightly larger font */
+      }
+
+      input[type="text"] {
+        padding: 15px 48px 15px 15px; /* Restore your original right padding if needed */
+        font-size: 16px;
+      }
+
+      .btn {
+        width: auto; /* Not full-width on larger screens */
+        max-width: none;
+        padding: 15px 72px; /* Original padding */
+      }
+    }
+
+    @media (min-width: 1024px) { /* Desktops */
+      .modal {
+        max-width: 600px; /* Even wider on large screens */
+      }
+
+      .modal-main h2 {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 480px) { /* Small mobiles */
+      .modal {
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        border-radius: 0; /* Remove rounded corners on very small screens */
+        margin: 0;
+      }
+
+      .modal-main {
+        padding: 20px 15px;
+      }
+
+      .modal-main h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-size: 12px;
+      }
+
+      input[type="text"] {
+        padding: 12px 15px;
+        font-size: 16px; /* Prevent zoom on iOS mobiles */
+        margin-bottom: 15px;
+      }
+
+      .btn {
+        padding: 12px 20px;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+
+    /* Ensure form stacks properly on all sizes */
+    form {
+      display: flex;
+      flex-direction: column;
+    }

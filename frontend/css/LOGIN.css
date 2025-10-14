@@ -1,0 +1,88 @@
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .modal {
+      background: #fff;
+      border-radius: 30px;
+      display: flex;
+      width: 30%;
+      height: 70%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+
+    .modal-main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .modal-main h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #f58c8c;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .forgot {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .btn {
+      background-color: #f58c8c;
+      color: white;
+      border: none;
+      padding: 15px 100px;
+      border-radius: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;  /* New: Makes it full-width block element */
+      margin: 0 auto;  /* New: Centers it horizontally */
+      margin-bottom: 20px;
+    }
+
+    .register {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+      margin: 0 auto 10px auto; /* Auto left/right margins center the block; preserves bottom margin */
+      display: block; /* Changed from inline-block: Makes it full-width, so auto margins can center it */
+      width: fit-content; /* Shrinks the width to just fit the text */
+      text-align: center;
+    }
+

@@ -51,6 +51,7 @@ body {
     align-items: center;
     gap: 15px;
     font-size: 30px;
+        color: black;
 }
 .SmallB a {
     text-decoration: none;

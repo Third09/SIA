@@ -5,55 +5,82 @@
   <script src="https://kit.fontawesome.com/c2ac8bb0c1.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skincare Landing Page</title>
-  <link rel="stylesheet" href="/frontend/css/landingpage.css">
+  <link rel="stylesheet" href="../css/landingpage.css">
 </head>
 <body>
   <!-- Header -->
-<div class="header">
+  <div class="header">
     <form class="search-bar" action="/search" method="GET">
-        <input type="text" id="searchitem" name="searchitem" placeholder="Search for products..." title="Search Products">
+      <input type="text" id="searchitem" name="searchitem" placeholder="Search for products..." title="Search Products">
     </form>
 
     <div class="center-section">
-        <a href="/frontend/html/landingpage.html" class="Home">Home</a>
-      <img class="logo" src="/frontend/images/Logo.png">
-        <a href="/frontend/html/ShopMain.html" class="Shop">Shop</a>
+      <a href="landingpage.html" class="Home">Home</a>
+      <img class="logo" src="../images/Logo.png" alt="Skinessentials brand logo">
+      <a href="ShopMain.html" class="Shop">Shop</a>
     </div>
 
     <div class="SmallB">
-        <a href="#"><i class="fas fa-bell"></i></a>
-        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        <a href="#"><i class="fas fa-user-alt"></i></a>
+      <a href="#"><i class="fas fa-bell"></i></a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#"><i class="fas fa-user-alt"></i></a>
     </div>
-</div>
+  </div>
 
-
-<!--PinkDivider-->
-<div class="pink-divider">
+  <!-- Pink Divider -->
+  <div class="pink-divider">
     <a href="">Best Sellers</a>
     <a href="">New Arrivals</a>
     <a href="">On Sale</a>
     <a href="">Skincare Products</a>
     <a href="">BeautyCare Products</a>
-</div>
-<!--PinkDivider-->
+  </div>
+<!-- Pink Divider-->
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="/frontend/images/Promotional Banner/body-scrub-promo.jpg" alt="">
-      <button class="btn">Shop Now</button>
-    </div>
-  </section>
+<div class="slideshow-container">
+  <div class="slides">
+    <div class="slide"><a href="#"><img src="/frontend/images/Promotional Banner/body-scrub-promo.jpg" alt=""></a></div>
+    <div class="slide"><a href="#"></a><img src="/frontend/images/Promotional Banner/face-serum-buy1take1.png" alt=""></a></div>
+    <div class="slide"><a href="#"></a><img src="/frontend/images/Promotional Banner/lotion-body-scrub-promo.png" alt=""></a></div>
+    <div class="slide"><a href="#"></a><img src="/frontend/images/Promotional Banner/serum-toner-bundle-promo.jpg" alt=""></a></div>
+    <div class="slide"><a href="#"></a><img src="/frontend/images/Promotional Banner/toner-promo.png" alt=""></a></div>
+  </div>
+
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
+
+
+
   
   <!-- Categories -->
   <section class="categories">
     <h2>Shop By Categories</h2>
     <div class="category-list">
-      <div class="circle">Skincare</div>
-      <div class="circle">Skincare</div>
-      <div class="circle">Skincare</div>
-      <div class="circle">Skincare</div>
-      <div class="circle">Skincare</div>
+      <div class="categorycard">
+        <img src="/frontend/images/Makeup/Cream Blush/WEBP Format/Cream Blush Design 2.webp">
+        <h2>Skincare</h2>
+      </div>
+
+      <div class="categorycard">
+        <img src="/frontend/images/Makeup/Cream Blush/WEBP Format/Cream Blush Design 2.webp">
+        <h2>MakeUp</h2>
+      </div>
+      
+            <div class="categorycard">
+        <img src="/frontend/images/Makeup/Cream Blush/WEBP Format/Cream Blush Design 2.webp">
+        <h2>BodyCare</h2>
+      </div>
+
+            <div class="categorycard">
+        <img src="/frontend/images/Makeup/Cream Blush/WEBP Format/Cream Blush Design 2.webp">
+        <h2>Skincare</h2>
+      </div>
+
+            <div class="categorycard">
+        <img src="/frontend/images/Makeup/Cream Blush/WEBP Format/Cream Blush Design 2.webp">
+        <h2>Skincare</h2>
+      </div>
     </div>
   </section>
 
@@ -134,8 +161,29 @@
     </div>
     <p>© Skinessentials, 2025 all rights reserved</p>
   </footer>
+
+  <script>
+  let index = 0;
+  const slides = document.querySelector('.slides');
+  const total = document.querySelectorAll('.slide').length;
+
+  function showSlide(i) {
+    index = (i + total) % total; // wrap around
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  document.querySelector('.next').addEventListener('click', () => showSlide(index + 1));
+  document.querySelector('.prev').addEventListener('click', () => showSlide(index - 1));
+
+  // Auto-slide every 5 seconds
+  let autoSlide = setInterval(() => showSlide(index + 1), 5000);
+
+  // Pause on hover
+  const container = document.querySelector('.slideshow-container');
+  container.addEventListener('mouseenter', () => clearInterval(autoSlide));
+  container.addEventListener('mouseleave', () => {
+    autoSlide = setInterval(() => showSlide(index + 1), 5000);
+  });
+</script>
 </body>
 </html>
-
-
-

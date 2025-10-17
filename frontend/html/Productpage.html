@@ -5,7 +5,7 @@
   <script src="https://kit.fontawesome.com/c2ac8bb0c1.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SheEssential - Product Page</title>
-  <link rel="stylesheet" href="/frontend/css/Productpage.css">
+  <link rel="stylesheet" href="../css/Productpage.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
 
     <div class="center-section">
         <a href="#" class="Home">Home</a>
-      <img class="logo" src="/frontend/images/Logo.png">
+      <img class="logo" src="../images/Logo.png">
         <a href="#" class="Shop">Shop</a>
     </div>
 
@@ -43,21 +43,27 @@
 
   
   <main class="product-section">
-    <p class="breadcrumb">HOME &gt; MAKEUP &gt; FACE &gt; PRODUCT NAME</p>
+    <p class="breadcrumb">HOME &gt; SKINCARE &gt; BRIGHTENING FACIAL TONER</p>
 
     <div class="product-content">
       
-      <div class="image-area">
-        <div class="small-images">
-          <div class="thumb"></div>
-          <div class="thumb"></div>
-        </div>
-        <div class="main-image"></div>
-      </div>
+<div class="image-area">
+  <div class="small-images">
+    <img src="../images/Skincare/Brightening Facial Toner/PNG Format/Toner Design 1.png" alt="Toner 1" class="thumb" onclick="changeImage(this)">
+    <img src="../images/Skincare/Brightening Facial Toner/PNG Format/Toner Design 2.png" alt="Toner 2" class="thumb" onclick="changeImage(this)">
+    <img src="../images/Skincare/Brightening Facial Toner/PNG Format/Toner Design 3.png" alt="Toner 2" class="thumb" onclick="changeImage(this)">
+  </div>
+
+  <div class="main-image">
+    <img id="mainProductImage" src="../images/Skincare/Brightening Facial Toner/PNG Format/Toner Design 1.png" alt="Main Toner">
+  </div>
+</div>
+
+
 
       
       <div class="details-area">
-        <h1>Product Name Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+        <h1>Brightening Facial Toner (100ml)</h1>
 
         <div class="rating-row">
           <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
@@ -76,9 +82,16 @@
 
           <div class="quantity">
             <button id="minus">-</button>
-            <input type="text" id="quantity" value="1" readonly>
+            <input type="text" id="quantity" value="1">
             <button id="plus">+</button>
           </div>
+        </div>
+
+        <div class="desc">
+          <p class ="deets"> Give your skin a radiant morning boost with Shessentials Brightening Facial Toner. Infused with 
+            Niacinamide, Licorice Root Extract, Rose Water, Aloe Vera, and alcohol-free Witch Hazel, it 
+            brightens dull skin, minimizes pores, and provides gentle hydration. The stable Vitamin C adds 
+            antioxidant protection, helping you achieve that healthy glow naturally.</p>
         </div>
 
         <button class="add-btn">Add to cart</button>
@@ -90,6 +103,15 @@
     <p>© 2025 SheEssential | All Rights Reserved</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="../js/Productpage.js"></script>
+
+  <script>
+  function changeImage(element) {
+    const mainImage = document.getElementById("mainProductImage");
+    mainImage.src = element.src;
+  }
+</script>
+
+
 </body>
 </html>

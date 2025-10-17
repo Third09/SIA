@@ -1,95 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Account Notifications</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Notifications</title>
+  <link rel="stylesheet" href="accountpage.css" />
 </head>
 <body>
-<div class="container">
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <div class="logo">
-      <img src="logo.png" alt="SheEssentials">
-    </div>
-    <nav class="menu">
-      <a href="profile.html">Profile</a>
-      <a href="password.html">Password</a>
-      <a href="notifications.html" class="active">Notifications</a>
-    </nav>
-    <button class="logout">Logout</button>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="SheEssentials">
+      </div>
+
+      <nav class="menu">
+        <a href="profile.html">Profile</a>
+        <a href="password.html">Password</a>
+        <a href="notification.html" class="active">Notifications</a>
+      </nav>
+      <button class="logout">Logout</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h2>Account Notifications</h2>
+      <div class="notifications-box">
+        <div class="notification">
+          <div class="notif-icon">🚚</div>
+          <div class="notif-text">Your Order <strong>#25322</strong> has been shipped!</div>
+          <span class="notif-time">Just now</span>
+          <button class="close-btn">×</button>
+        </div>
+
+        <div class="notification">
+          <div class="notif-icon">🚚</div>
+          <div class="notif-text">Your Order <strong>#19234</strong> has been shipped!</div>
+          <span class="notif-time">5 hrs ago</span>
+          <button class="close-btn">×</button>
+        </div>
+
+        <div class="notification">
+          <div class="notif-icon">🚚</div>
+          <div class="notif-text">Your Order <strong>#98162</strong> has been shipped!</div>
+          <span class="notif-time">7 hrs ago</span>
+          <button class="close-btn">×</button>
+        </div>
+
+        <div class="notification">
+          <div class="notif-icon">🚚</div>
+          <div class="notif-text">Your Order <strong>#87163</strong> has been shipped!</div>
+          <span class="notif-time">3 days ago</span>
+          <button class="close-btn">×</button>
+        </div>
+
+        <div class="notification">
+          <div class="notif-icon">🚚</div>
+          <div class="notif-text">Your Order <strong>#87163</strong> has been shipped!</div>
+          <span class="notif-time">3 days ago</span>
+          <button class="close-btn">×</button>
+        </div>
+
+        <div class="notification">
+          <div class="notif-icon">🚚</div>
+          <div class="notif-text">Your Order <strong>#87163</strong> has been shipped!</div>
+          <span class="notif-time">3 days ago</span>
+          <button class="close-btn">×</button>
+        </div>
+
+        <div class="notification">
+          <div class="notif-icon">🚚</div>
+          <div class="notif-text">Your Order <strong>#87163</strong> has been shipped!</div>
+          <span class="notif-time">3 days ago</span>
+          <button class="close-btn">×</button>
+        </div>
+
+        <div class="notification promo">
+          <div class="notif-icon">🏷️</div>
+          <div class="notif-text"><strong>50% OFF</strong> mattifying lipstick + Foundation combo</div>
+          <button class="close-btn">×</button>
+        </div>
+      </div>
+    </main>
   </div>
 
-  <!-- Main Content -->
-  <div class="main-content">
-    <h2>Account Notifications</h2>
-
-    <div class="notifications-box">
-      <div class="notification">
-        <div class="notif-icon">
-          <img src="truck.png" alt="Shipped Icon">
-        </div>
-        <div class="notif-text">
-          <p>Your Order <strong>#25322</strong> has been shipped!</p>
-        </div>
-        <span class="notif-time">Just now</span>
-        <button class="close-btn">×</button>
-      </div>
-
-      <div class="notification">
-        <div class="notif-icon">
-          <img src="truck.png" alt="Shipped Icon">
-        </div>
-        <div class="notif-text">
-          <p>Your Order <strong>#19234</strong> has been shipped!</p>
-        </div>
-        <span class="notif-time">5 hrs ago</span>
-        <button class="close-btn">×</button>
-      </div>
-
-      <div class="notification">
-        <div class="notif-icon">
-          <img src="truck.png" alt="Shipped Icon">
-        </div>
-        <div class="notif-text">
-          <p>Your Order <strong>#98162</strong> has been shipped!</p>
-        </div>
-        <span class="notif-time">7 hrs ago</span>
-        <button class="close-btn">×</button>
-      </div>
-
-      <div class="notification">
-        <div class="notif-icon">
-          <img src="truck.png" alt="Shipped Icon">
-        </div>
-        <div class="notif-text">
-          <p>Your Order <strong>#87163</strong> has been shipped!</p>
-        </div>
-        <span class="notif-time">3 days ago</span>
-        <button class="close-btn">×</button>
-      </div>
-
-      <div class="notification promo">
-        <div class="notif-icon">
-          <img src="discount.png" alt="Promo Icon">
-        </div>
-        <div class="notif-text">
-          <p><strong>50% OFF</strong> mattifying lipstick + Foundation combo</p>
-        </div>
-        <button class="close-btn">×</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  // simple remove notification functionality
-  document.querySelectorAll('.close-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      btn.parentElement.remove();
+  <script>
+    document.querySelectorAll('.close-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.parentElement.remove();
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>

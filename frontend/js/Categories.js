@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     productTitle.textContent = categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1) + " Products";
     productList.innerHTML = items.map(p => `
       <div class="product">
-        <div class="box">
+        <a href="/frontend/html/Productpage.html"><div class="box">
           <img src="${p.img}" alt="${p.name}" style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
         </div>
         <p>${p.name}<br>${p.price}</p>

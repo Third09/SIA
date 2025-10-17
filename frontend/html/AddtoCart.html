@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cart</title>
+  <link rel="stylesheet" href="/frontend/css/AddtoCart.css">
+</head>
+<body>
+
+      <!-- Header -->
+  <div class="header">
+    <form class="search-bar" action="/search" method="GET">
+      <input type="text" id="searchitem" name="searchitem" placeholder="Search for products..." title="Search Products">
+    </form>
+
+    <div class="center-section">
+      <a href="landingpage.html" class="Home">Home</a>
+      <img class="logo" src="../images/Logo.png" alt="Skinessentials brand logo">
+      <a href="ShopMain.html" class="Shop">Shop</a>
+    </div>
+
+    <div class="SmallB">
+      <a href="#"><i class="fas fa-bell"></i></a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#"><i class="fas fa-user-alt"></i></a>
+    </div>
+  </div>
+
+  <!-- Pink Divider -->
+  <div class="pink-divider">
+    <a href="">Best Sellers</a>
+    <a href="">New Arrivals</a>
+    <a href="">On Sale</a>
+    <a href="">Skincare Products</a>
+    <a href="">BeautyCare Products</a>
+  </div>
+<!-- Pink Divider-->
+
+  <h1>My Cart</h1>
+
+  <div id="cart-items"></div>
+
+  <div class="cart-footer">
+    <div class="select-all">
+      <input type="checkbox" id="select-all" onchange="toggleSelectAll(this)">
+      <label for="select-all">Select All</label>
+    </div>
+
+    <div class="checkout-section">
+      <div class="total">
+        <p id="total-price">0 PHP</p>
+      </div>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Link to external JS file -->
+  <script src="/frontend/js/AddtoCart.js"></script>
+</body>
+</html>

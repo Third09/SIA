@@ -10,3 +10,10 @@ minus.addEventListener('click', () => {
   if (parseInt(qty.value) > 1) qty.value = parseInt(qty.value) - 1;
 });
 
+  // --- Optional: prevent letters or symbols ---
+  qty.addEventListener('keypress', (e) => {
+    if (!/[0-9]/.test(e.key)) {
+      e.preventDefault();
+    }
+  });
+

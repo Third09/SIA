@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+/* Overall Layout */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 22%;
+  background-color: #ffb6c1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 18px 0;
+  text-align: center;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.menu a.active,
+.menu a:hover {
+  background-color: #ff8fa3;
+}
+
+.logout {
+  background-color: white;
+  color: #ff8fa3;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout:hover {
+  background-color: #ffe0e6;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 70px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content-box {
+  width: 600px;
+}
+
+.content-box h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content-box h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+/* Form */
+.form label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px solid #ffb6c1;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field .toggle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: #ff8fa3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #ff758c;
+}
+
+/* Two-column form row for first/last name */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group {
+  width: 48%;
+}
+
+/* Notifications Page */
+.notifications-box {
+  background-color: #fff;
+  border: 2px solid #f891a6;
+  border-radius: 10px;
+  padding: 20px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.notification.promo {
+  background-color: #ffe6ea;
+}
+
+.notif-icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.notif-text p {
+  margin: 0;
+  color: #000;
+  font-size: 15px;
+}
+
+.notif-time {
+  font-size: 12px;
+  color: #555;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #f891a6;
+}
+
+.notifications-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* start from top */
+    height: 100vh;
+    margin-left: 300px; /* match sidebar width */
+    margin-top: 100px; /* ⬅ lowers the notification box */
+}
+
+/* Layout container */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar stays the same */
+.sidebar {
+  width: 250px;
+  background-color: #ffc0cb;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Horizontal center */
+  justify-content: center;   /* Vertical center */
+  padding: 40px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Title styling */
+.main-content h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Notifications box centered */
+.notifications-box {
+  background-color: #fff;
+  border: 2px solid #f891a6;
+  border-radius: 10px;
+  padding: 20px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin: 0 auto; /* Horizontal center fallback */
+}
+.notifications-box {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
